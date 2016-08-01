@@ -146,8 +146,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Testing tasks
-  grunt.registerTask('test', ['jshint', 'shell:unit', 'shell:accept']);
-  grunt.registerTask('unit', ['jshint', 'shell:unit']);
+  grunt.registerTask('test', ['shell:unit', 'shell:accept']);
+  grunt.registerTask('unit', ['shell:unit']);
   grunt.registerTask('accept', ['env:local', 'shell:accept']);
 
   // Coverate tasks
